@@ -45,7 +45,6 @@ public class BooksDao {
     public void insertBooks(List<Books> books) throws SQLException {
         String INSERT_BOOK_SQL = "INSERT INTO books (isbn, title, authors, price) VALUES (?, ?, ?, ?);";
 
-        // Use transaction and batch processing
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_BOOK_SQL)) {
 
             connection.setAutoCommit(false);
@@ -68,11 +67,10 @@ public class BooksDao {
         }
     }
 
-    // Retrieve all books from the database
     public List<Books> selectAllBooks() {
 
         List<Books> books = new ArrayList<>();
-        String SELECT_ALL_BOOKS = "SELECT isbn, title, authors, price FROM books"; // SQL query to get all books
+        String SELECT_ALL_BOOKS = "SELECT isbn, title, authors, price FROM books";
 
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_BOOKS)) {
 
@@ -86,7 +84,6 @@ public class BooksDao {
                 String authors = rs.getString("authors");
                 float price = rs.getFloat("price");
 
-                // Add each book to the list
                 books.add(new Books(isbn, title, authors, price));
             }
         } catch (SQLException e) {

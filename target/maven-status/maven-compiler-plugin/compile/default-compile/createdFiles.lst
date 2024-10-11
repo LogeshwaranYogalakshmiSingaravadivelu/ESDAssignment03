@@ -1,5 +1,8 @@
+com\csye6220\assignment3\dao\BooksDao.class
 com\csye6220\assignment3\resources\JakartaEE10Resource.class
 com\csye6220\assignment3\JakartaRestConfiguration.class
+com\csye6220\assignment3\model\Books.class
+com\csye6220\assignment3\controller\bookController.class
 com\csye6220\assignment3\dao\MovieDao.class
 com\csye6220\assignment3\Part_3.class
 com\csye6220\assignment3\controller\movieController.class
