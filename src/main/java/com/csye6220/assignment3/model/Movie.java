@@ -13,6 +13,7 @@ public class Movie {
     private String actor;
     private String actress;
     private String genre;
+    private int year;
 
     public String getTitle() {
         return title;
@@ -53,7 +54,6 @@ public class Movie {
     public void setYear(int year) {
         this.year = year;
     }
-    private int year;
 
     public Movie(String title, String actor, String actress, String genre, int year) {
         this.title = title;
