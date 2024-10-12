@@ -82,7 +82,7 @@ public class bookController extends HttpServlet {
         String[] prices = request.getParameterValues("price");
 
         List<Books> booksList = new ArrayList<>();
-
+        
         for (int i = 0; i < isbns.length; i++) {
             String isbn = isbns[i];
             String title = titles[i];

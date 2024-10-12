@@ -5,5 +5,6 @@ com\csye6220\assignment3\model\Books.class
 com\csye6220\assignment3\controller\bookController.class
 com\csye6220\assignment3\dao\MovieDao.class
 com\csye6220\assignment3\Part_3.class
+com\csye6220\assignment3\Part9.class
 com\csye6220\assignment3\controller\movieController.class
 com\csye6220\assignment3\model\Movie.class

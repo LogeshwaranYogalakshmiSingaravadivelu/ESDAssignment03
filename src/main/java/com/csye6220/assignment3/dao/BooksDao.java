@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class BooksDao {
 
-    private String jdbcURL = "jdbc:mysql://localhost:3306/moviedb?useSSL=false";
+    private String jdbcURL = "jdbc:mysql://localhost:3306/booksdb?useSSL=false";
     private String jdbcUsername = "root";
     private String jdbcPassword = "password";
 

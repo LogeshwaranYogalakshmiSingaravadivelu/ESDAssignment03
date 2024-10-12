@@ -32,7 +32,7 @@
     <button type="submit">Add Books</button>
 </form>
 
-<a href="part7_list">Back to Book List</a>
+<a href="${pageContext.request.contextPath}/part7_list">Back to Book List</a>
 
 </body>
 </html>

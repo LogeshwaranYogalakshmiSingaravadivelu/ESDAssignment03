@@ -8,7 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"  %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/xml" prefix="x" %>  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/xml" prefix="x" %> 
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,9 +16,13 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <sql:setDataSource var="myDataSource" driver="com.mysql.cj.jdbc.Driver"
+                           url="jdbc:mysql://localhost:3306/proj?useSSL=false;"
+                           user="root" password="password" />
         <c:set var="Date" value="<%=new java.util.Date()%>" />  
         <c:out value="${'Assignment 3 - Part 3'}"/> 
         <c:set var="income" scope="session" value="${4000*4}"/> 
+
         <%!
             public String printGreeting(String name) {
                 return "Welcome! " + name;

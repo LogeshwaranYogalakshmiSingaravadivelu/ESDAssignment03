@@ -34,6 +34,21 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version> <!-- Ensure this version matches your MySQL server version -->
         </dependency>
+        <!--        <dependency>
+            <groupId>net.sf.opencsv</groupId>
+            <artifactId>csvjdbc</artifactId>
+            <version>1.0.44</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/Web Pages/WEB_INF/lib/csvjdbc.jar</systemPath>
+        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.csvjdbc/csvjdbc -->
+        <dependency>
+            <groupId>net.sourceforge.csvjdbc</groupId>
+            <artifactId>csvjdbc</artifactId>
+            <version>1.0.28</version>
+        </dependency>
+
 
     </dependencies>
     
